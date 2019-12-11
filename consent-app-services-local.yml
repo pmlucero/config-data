@@ -33,8 +33,8 @@ api:
     server: https://amer-api-partner44-test.apigee.net
 logging:
   file:
-  #  path: /home/container-data/logs
     path: ./logs
+    #path: /home/container-data/logs
   level:
     cl.bci: DEBUG
 management:
