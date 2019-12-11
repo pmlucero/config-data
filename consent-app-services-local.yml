@@ -31,11 +31,11 @@ api:
     uri: /openbanking/prod/v1/authorization-factor/scopes-info
   target:
     server: https://amer-api-partner44-test.apigee.net
-#logging:
-  #file:
-    #path: /home/container-data/logs
- # level:
-  #  cl.bci: DEBUG
+logging:
+  file:
+    path: /home/container-data/logs
+  level:
+    cl.bci: DEBUG
 management:
   endpoint:
     health:
