@@ -1,8 +1,8 @@
 api:
-  #access-request:
-  #  scope: access-requests
-  #  status: AwaitingAuthorization
-  #  uri: /openbanking/prod/v1/access/requests
+  access-request:
+    scope: access-requests
+    status: AwaitingAuthorization
+    uri: /openbanking/prod/v1/access/requests
   client:
     #assertion: eyJhbGciOiJSUzI1NiIsImV4cGlyZXNJbiI6IjFoIn0.eyJpc3MiOiJtSFZKSzVyR0JKenc4MFhIS3BjNjNrYnNYMGowTzRONiIsImNyZWRlbnRpYWxzIjoiM0xqR0d3WU9QT0FhVTJYUSJ9.Xe73B5KAMPMi4YiYfvPikPr_IoYvaiRx5iLOdkeWpTZqlQNpiU1-I-_OqtT5fswbXAabNTrCjTFWY3NMZRz9yRG7S6X7UXP0lHO507W2CBqUpYK5Y4BGSoOR0Lddq6MLmEEpmk2ITvYuSNif1aSxgcGwhQmqUBQBdO-RN2byP5dRFT7a5iilut0eUc949jfcwI91SYMcWZSkRWTZjApMCrtB0cMEyMKMns56BW9E2JB6qZ7bFWH9Q07QSjTLbHHk4T636i97i-HJccsPkHRkLzPY-Gs3_5iNzB-oecTWxoPcc_cw0qJrG4Eq8wRtgHpJCUTVJbbaQr_FrG6_tdRmrDdfc5-q8zGUe_nudgwG_hPF3692r5kaMR4wrt5bNxus23QpHYVhirklwM2Msgd7D3-VSaRI3iRbrYhguHIqD4VxFjbwxi9BMzF7W9n1NDhNyfzcdryUdOJsXz2ALt48-mtd8tLBEaVMdmxQhYb83LQa3V9ABF11_cciw8DELWIBIfkKJmCvkCR58OukOGNYsdF__3Z6Ek9MPsCra9ynVoJYD4E_BSGG_y4lLavxlNGKTlK--0qJqG8rYugYb2X7dYylX5VkLsbgEsEVyUdKxqjit6nXyLYXjMyJGKpik8xDllA4w1xIQfLjLkOX_psXQ2vzJKFXu8oG2kek1gDQevc
     #id: mHVJK5rGBJzw80XHKpc63kbsX0j0O4N6
