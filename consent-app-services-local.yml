@@ -1,6 +1,6 @@
 api:
   access-request:
-    scope: access-requests
+    scope: access-requests1
     status: AwaitingAuthorization
     uri: /openbanking/prod/v1/access/requests
   client:
