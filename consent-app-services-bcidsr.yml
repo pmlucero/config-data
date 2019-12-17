@@ -1,0 +1,56 @@
+api:
+  access-request:
+    scope: access-requests
+    status: AwaitingAuthorization
+    uri: /openbanking/prod/v1/access/requests
+  client:
+    type: urn:ietf:params:oauth:client-assertion-type:jwt-bearer
+  consent:
+    createUri: /openbanking/prod/v1/consents
+    patchUri: /openbanking/prod/v1/consents
+    scope: consents
+    uri: /openbanking/prod/v1/consents
+    state: 
+      approved: Authorized
+  login:
+    authentication:
+      type: private-oAuth
+    uri: /openbanking/prod/v1/authentication-manager/token
+  oauth:
+    uri: /apis/prod/v1/oauth/token
+    completedUri: /apis/prod/v1/oauth/authorized
+  permission:
+    scope: permissions
+    uri: /openbanking/prod/v1/permissions
+  scope:
+    scope: authorization-factor
+    uri: /openbanking/prod/v1/authorization-factor/scopes-info
+  target:
+    server: https://amer-api-partner44-test.apigee.net
+logging:
+  file:
+    path: /home/container-data/logs
+  level:
+    cl.bci: DEBUG
+management:
+  endpoint:
+    health:
+      show-details: always
+redirect:
+  endpoint: http://login_uri
+  return:
+    endpoint: http://localhost
+security:
+  require-ssl: true
+  token:
+    validity: 60000 # miliseconds
+  encryption:
+    algorithm: AES
+server:
+  port: 8443
+  servlet:
+    context-path: /consent-app/v1
+  ssl:
+    key-alias: consent-app-services
+    key-store: /home/container-data/keystore/consent-app-services.p12
+    key-store-type: PKCS12
