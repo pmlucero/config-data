@@ -44,7 +44,7 @@ redirect:
 security:
   require-ssl: true
   token:
-    validity: 60000 # miliseconds
+    validity: 6000000 # miliseconds
   encryption:
     algorithm: AES
 server:
