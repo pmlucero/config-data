@@ -69,6 +69,6 @@ server:
   ssl:
     key-alias: consent-app-services
     #key-store: /Users/pablo/Development/Projects/BCI014-Develop/02 - Source/04 - JavaSources/consent-app-services-ssl/consent-app-services.p12
-    key-store: keystore/consent-app-services.p12
+    key-store: scr/main/resources/keystore/consent-app-services.p12
     #key-store-password: Welcome1!
     key-store-type: PKCS12
