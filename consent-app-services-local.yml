@@ -1,4 +1,16 @@
 api:
+  keyChallenge:
+   scope: authorization-factor
+   uri: /openbanking/prod/v1/authorization-factor/otp/generate-key
+  generateChallenge:
+   scope: authorization-factor
+   uri: /openbanking/prod/v1/authorization-factor/otp/generate-challenge
+  validateChallenge:
+   scope: authorization-factor
+   uri: /openbanking/prod/v1/authorization-factor/otp/validate-challenge
+  otpAuthorization:
+   scope: authorization-factor
+   uri: /openbanking/prod/v1/authorization-factor/authorization
   access-request:
     scope: access-requests
     status: AwaitingAuthorization
@@ -27,6 +39,9 @@ api:
     uri: /openbanking/prod/v1/authorization-factor/scopes-info
   target:
     server: https://amer-api-partner44-test.apigee.net
+otp:
+ enabled: true
+ auth-id-validity: 60000 # miliseconds    
 logging:
   file:
     #path: ./logs
